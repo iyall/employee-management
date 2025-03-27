@@ -1,27 +1,15 @@
-# EmployeeManagement
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+Steps to install packages
+clone or download source code from github: https://github.com/iyall/employee-management.git branch:master
+open source code by VS Code IDE to getting some using packages and run a angular web application - you can open by any IDE that you are using
+Need to install used packages by enter command:
 
-## Development server
+npm i
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Steps to run application in both json-server and angular application:
 
-## Code scaffolding
+Run json-server by command:
+npm run server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run angular application by command:
+npm start
