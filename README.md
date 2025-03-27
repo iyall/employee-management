@@ -16,3 +16,6 @@ npm start
 
 open browser insert this url:
 http://localhost:4200/
+
+user:admin
+password: admin
