@@ -1,0 +1,49 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Employee Details</h2>
+  <div *ngIf="employee" class="card">
+    <div class="card-body">
+     
+      <div class="row p-2" >
+        <h5 class="card-title">
+            {{ employee.firstname }} {{ employee.lastname }}
+          </h5>
+        <div class="col-4">
+          <p class="card-text">
+            <strong>Username:</strong> {{ employee.username }}
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="card-text"><strong>Email:</strong> {{ employee.email }}</p>
+        </div>
+        <div class="col-4">
+          <p class="card-text">
+            <strong>Birthdate:</strong> {{ employee.birthdate }}
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="card-text">
+            <strong>Basic Salary:</strong>
+            {{ formatCurrencyIDR(employee.basicsalary) }}
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="card-text">
+            <strong>Status:</strong> {{ employee.status }}
+          </p>
+        </div>
+        <div class="col-4">
+          <p class="card-text"><strong>Group:</strong> {{ employee.group }}</p>
+        </div>
+        <div class="col-4">
+          <p class="card-text">
+            <strong>Description:</strong> {{ employee.description }}
+          </p>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <button class="btn btn-primary" (click)="goBack()">Ok</button>
+
+      </div>
+    </div>
+  </div>
+</div>
