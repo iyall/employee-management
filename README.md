@@ -13,5 +13,6 @@ npm run server
 
 Run angular application by command:
 npm start
+
 open browser insert this url:
 http://localhost:4200/
