@@ -73,9 +73,21 @@ export class EmployeeListComponent implements OnInit {
     setTimeout(() => {
       this.isLoading = false;
       this.dataSource.filterPredicate = (data, filter) => {
-        return (
-          data.username.toLowerCase().includes(this.filter.username) &&
+        var dataFilter 
+        if(this.filter.username && this.filter.email){
+          dataFilter = data.username.toLowerCase().includes(this.filter.username) &&
           data.email.toLowerCase().includes(this.filter.email)
+
+        }else if(this.filter.username){
+          dataFilter = data.username.toLowerCase().includes(this.filter.username)
+        }
+        else if(this.filter.email){
+          dataFilter = data.email.toLowerCase().includes(this.filter.email)
+        }
+        return (
+          dataFilter
+          // data.username.toLowerCase().includes(this.filter.username) &&
+          // data.email.toLowerCase().includes(this.filter.email)
         );
       };
 
